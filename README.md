@@ -1,5 +1,26 @@
 AY: turbo + workspaces + vite
-    yarn create turbo -e with-vite
+    npx create-turbo -e with-vite
+
+# how it was created
+ - npx create-turbo -e with-vite
+   then select yarn(!) there (not use "yarn create turbo" because it not works)
+
+ - in dir upgrade yarn to latest BERRY version (2+)
+   yarn set version stable
+ - setup yarn to loose mode (to be compatible with eslint module loader)
+   in .yarnrc.yml:
+     enableGlobalCache: false
+     nodeLinker: node-modules
+     pnpMode: strict  #loose
+ - add to packages/config-typescript/base.json:
+    /* free typing */
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "allowJs": true,
+    "checkJs": true
+ -
+
+
 
 # `Turborepo` Vite starter
 
