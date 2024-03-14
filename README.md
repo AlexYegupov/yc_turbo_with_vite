@@ -1,3 +1,6 @@
+AY: turbo + workspaces + vite
+    yarn create turbo -e with-vite
+
 # `Turborepo` Vite starter
 
 This is an official starter Turborepo.
