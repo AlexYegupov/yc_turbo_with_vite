@@ -9,3 +9,6 @@ dist-ssr
 .cache
 server/dist
 public/dist
+
+# use "nodeLinker: node-modules" hense seems like no need to store the cache
+.yarn/cache
