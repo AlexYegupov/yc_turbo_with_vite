@@ -1,0 +1,29 @@
+{
+  "name": "web2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint1": "eslint \"src/**/*.ts\"",
+    "p": "pwd",
+    "sc": "yarn workspace eslint-config-custom lint $(yarn p)",
+    "sc1": "yarn workspace eslint-config-custom lint $(pwd)/src"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9"
+  }
+}

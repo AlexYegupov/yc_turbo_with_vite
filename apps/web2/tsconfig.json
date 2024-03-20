@@ -1,0 +1,6 @@
+{
+  "extends": "@repo/typescript-config/vite.json",
+  "extends11": "../../packages/tsconfig/vite.json",
+  "extendsQQ": "tsconfig/my-vite/tsconfig.json",
+  "include": ["src"]
+}
