@@ -3,6 +3,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
+import { CounterReact } from '@repo/ui2';
 
 //let aa = 4; aa += 'R_OK';
 
@@ -10,16 +11,6 @@ console.log(`React,`, React)
 
 function App() {
   const [count, setCount] = useState(0)
-
-  // const fff = (p) => {
-  //   console.log(`123`, p)
-  //   console.log(`123`)
-  //   let a;
-  //   if (p > 5) a = 1
-  //   a = 'asdf';
-  //   console.log(a)
-  // }
-
   return (
     <>
       <div>
@@ -42,6 +33,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <hr />
+      <CounterReact />
     </>
   )
 }

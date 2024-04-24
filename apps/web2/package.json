@@ -14,8 +14,7 @@
     "sc1": "yarn workspace eslint-config-custom lint $(pwd)/src"
   },
   "dependencies": {
-    "@repo/ui": "*",
-    "react": "^18.2.0"
+    "@repo/ui": "*"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
@@ -23,7 +22,9 @@
     "@types/react": "^18.2.13",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.46.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.1.6",
-    "vite": "^4.3.9"
+    "vite": "^5.0.10"
   }
 }
