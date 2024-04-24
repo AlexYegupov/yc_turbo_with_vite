@@ -23,8 +23,8 @@
      }
    (same as node_modules/eslint-config-prettier/package.json
 
-
-
+ - clone ui to ui2 and add react manually there
+ - clone web to web2 and add react (ui2 react component usage) manually
 
 
  - add to packages/config-typescript/base.json:
