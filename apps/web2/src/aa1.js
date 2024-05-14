@@ -13,9 +13,7 @@ function test(a) {
 
 //let a = 19;
 
-let MyComponent = () => <div>mydiv</div>;
-
-console.log(React, Header, CounterReact, MyComponent);
+console.log(React, Header, CounterReact);
 console.log(test('1'));
 //console.log(aa, a);
 //console.log(aa == 1);
