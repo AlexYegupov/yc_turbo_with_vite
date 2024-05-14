@@ -5,9 +5,9 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { CounterReact } from '@repo/ui2';
 
-//let aa = 4; aa += 'R_OK';
+var aa = 4; aa += 'R_OK';
 
-console.log(`React,`, React)
+console.log(`React,`, React, aa)
 
 function App() {
   const [count, setCount] = useState(0)

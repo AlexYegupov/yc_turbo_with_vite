@@ -37,7 +37,10 @@
  - add web2 (packages/web + react)
  - add ui2 (packages/ui + react)
 
- - (optional) to use emacs use pnpify:
+ - manually configure eslint-config to base on @wttsolutions/eslint-config
+   yarn workspace @repo/eslint-config add -D @wttsolutions/eslint-config
+
+ - (?is necessary) to use emacs use pnpify:
    ```
    yarn add -D @yarnpkg/pnpify
    yarn pnpify emacs .
@@ -46,6 +49,11 @@
 ## ui2
 
 ui + react
+
+# Note:
+
+Avoid using eslint FORMATTING rules, format via prettier 
+(see https://github.com/eslint/eslint/issues/17522)
 
 
 # ORIGINAL README:

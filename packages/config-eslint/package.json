@@ -1,7 +1,17 @@
 {
   "name": "@repo/eslint-config",
   "version": "0.0.0",
-  "main": "index.js",
+  "exports": {
+    ".": "./.eslintrc.js",
+    "./index.js": "./.eslintrc.js",
+    "./.eslintrc.js": "./.eslintrc.js",
+    "./prettier.config.js": "./prettier.config.js"
+  },
+  "ZZfiles": [
+    ".eslintrc*.js",
+    "tsconfig.json",
+    "prettier.config.js"
+  ],
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.17.0",
@@ -13,5 +23,8 @@
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@wttsolutions/eslint-config": "^0.1.24"
   }
 }
