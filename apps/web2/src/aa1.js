@@ -13,7 +13,7 @@ function test(a) {
 
 //let a = 19;
 
-console.log(React, Header, CounterReact);
+console.log(aa, React, Header, CounterReact);
 console.log(test('1'));
 //console.log(aa, a);
 //console.log(aa == 1);

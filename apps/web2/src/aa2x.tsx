@@ -9,7 +9,7 @@ function test(a: number) {
   return a + 'sadf';
 }
 
-let MyComponent = () => <div>mydiv</div>;
+const MyComponent = () => <div>mydiv</div>;
 
 console.log(React, Header, CounterReact, MyComponent);
 console.log(test('a'));

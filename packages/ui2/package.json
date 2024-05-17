@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint .",
     "lint_": "eslint \"**/*\" --ext ts,tsx,js,jsx"
   },
   "devDependencies": {

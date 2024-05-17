@@ -44,15 +44,25 @@
    ```
    yarn add -D @yarnpkg/pnpify
    yarn pnpify emacs .
+
+
    ```
 
 ## ui2
 
 ui + react
 
+## web2
+
+ -  make `package.json->lint` everything (not only ts):
+ ```
+   "lint": "eslint \"src/**/*.ts\""
+ ```
+
+
 # Note:
 
-Avoid using eslint FORMATTING rules, format via prettier 
+Avoid using eslint FORMATTING rules, format via prettier
 (see https://github.com/eslint/eslint/issues/17522)
 
 

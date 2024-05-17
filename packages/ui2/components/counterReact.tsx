@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+var a = 10;
+console.log(a)
+
 export const CounterReact = () => {
   const [counter, setCount] = useState(0);
 
