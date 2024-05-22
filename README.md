@@ -100,6 +100,8 @@
    ```
  - (need recheck) typescript 5.2 "go to definition" not works
 
+ - how to add workspace
+   add workspace dir & run `yarn` at the root
 
 # ORIGINAL README:
 

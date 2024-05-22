@@ -1,0 +1,24 @@
+{
+  "name": "docs-md",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "docs:build": "rm -rf ./docs/_sidebar.md && yarn docs:build:remark && yarn docs:build:docsify",
+    "docs:build:remark": "yarn remark -f --use remark-validate-links ./docs -o ./docs",
+    "docs:build:docsify": "./bin/build-docsify.sh",
+    "docs:preview": "(cd docs && python3 -m http.server $PORT||3000)"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.4",
+    "remark": "^14.0.2",
+    "remark-autolink-references": "^2.0.0",
+    "remark-cli": "^11.0.0",
+    "remark-gfm": "^3.0.1",
+    "remark-lint": "^9.1.1",
+    "remark-lint-no-dead-urls": "^1.1.0",
+    "remark-lint-no-file-name-irregular-characters": "^2.1.1",
+    "remark-lint-no-undefined-references": "^4.2.0",
+    "remark-validate-links": "^12.1.0",
+    "unist-util-visit": "^4.1.1"
+  }
+}
