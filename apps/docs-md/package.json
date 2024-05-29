@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "docs:build": "rm -rf ./docs/_sidebar.md && yarn docs:build:remark && yarn docs:build:docsify",
-    "docs:build:remark": "yarn remark -f --use remark-validate-links ./docs -o ./docs",
-    "docs:build:docsify": "./bin/build-docsify.sh",
-    "docs:preview": "(cd docs && python3 -m http.server $PORT||3000)"
+    "dev": "yarn live-server docs",
+    "build": "rm -rf ./docs/_sidebar.md && yarn build:remark && yarn build:docsify",
+    "build:remark": "yarn remark -f --use remark-validate-links ./docs -o ./docs",
+    "build:docsify": "./bin/build-docsify.sh"
   },
   "devDependencies": {
     "docsify-cli": "^4.4.4",
+    "live-server": "^1.2.2",
     "remark": "^14.0.2",
     "remark-autolink-references": "^2.0.0",
     "remark-cli": "^11.0.0",

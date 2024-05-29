@@ -1,5 +1,16 @@
 # AY: turbo + workspaces + vite (customized `npx create-turbo -e with-vite`)
 
+# Content
+
+## packages/ui2
+ui + react
+
+## apps/web2
+web + react
+
+## apps/docs-md
+markdown-based documentation (see apps/docs-md/README.md)
+
 ## How it was created
  - npx create-turbo -e with-vite
    then select yarn(!) there (not use "yarn create turbo" because it not works)
