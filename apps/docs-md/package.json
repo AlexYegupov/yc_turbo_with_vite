@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn live-server docs",
+    "dev": "yarn live-server --no-browser docs",
     "build": "./bin/build.sh"
   },
   "devDependencies": {
