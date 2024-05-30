@@ -3,7 +3,7 @@ import { Header } from '@repo/ui2';
 import { CounterReact } from '@repo/ui2';
 
 var aa = 4;
-aa += 'R_OK';
+//aa += 'R_OK';
 
 function test(a: number) {
   return a + 'sadf';
@@ -12,7 +12,8 @@ function test(a: number) {
 const MyComponent = () => <div>mydiv</div>;
 
 console.log(React, Header, CounterReact, MyComponent);
-console.log(test('a'));
+//console.log(test('a'));
+console.log(test(1));
 console.log(
   aa,
   'asddasffdas sdfasdfasdf',

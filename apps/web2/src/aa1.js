@@ -3,7 +3,7 @@ import { Header } from '@repo/ui2';
 import { CounterReact } from '@repo/ui2';
 
 var aa = 4;
-aa += 'R_OK';
+//aa += 'R_OK';
 
 Math.sin(34);
 

@@ -7,11 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src\"",
-    "lint1": "eslint \"src\"",
-    "p": "pwd",
-    "sc": "yarn workspace eslint-config-custom lint $(yarn p)",
-    "sc1": "yarn workspace eslint-config-custom lint $(pwd)/src"
+    "lint": "eslint src"
   },
   "dependencies": {
     "@repo/ui": "*"
