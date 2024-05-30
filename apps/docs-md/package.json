@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "yarn live-server docs",
-    "build": "rm -rf ./docs/_sidebar.md && yarn build:remark && yarn build:docsify",
-    "build:remark": "yarn remark -f --use remark-validate-links ./docs -o ./docs",
-    "build:docsify": "./bin/build-docsify.sh"
+    "build": "./bin/build.sh"
   },
   "devDependencies": {
     "docsify-cli": "^4.4.4",
