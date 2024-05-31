@@ -1,4 +1,4 @@
-# Project documenting
+Project documenting
 
 \***\*TL;DR\*\***; write documentation to markdown files, store them in the project repository and view them in the browser (see `package.json -> scripts -> build`)
 
