@@ -124,6 +124,7 @@ Tools to convert items like "JIRA-123" to links:
 
 #### TODO
 
+- ?ingegrate with documate (https://documate.site/integration/docsify)
 - link prevew
 
 ## How to create a cool documentation
