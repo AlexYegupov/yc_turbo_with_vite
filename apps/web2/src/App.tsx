@@ -1,41 +1,32 @@
 import React from 'react';
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
 import './App.css'
-import { CounterReact } from '@repo/ui2';
 
-var aa = 4;
-//aa += 'R_OK';
-
-console.log(`React,`, React, aa)
+//import Counter from '@repo/ui2/Counter';
+const Counter = React.lazy(() => import('@repo/ui2/Counter'));
 
 function App() {
+  const [lazyLoaded, setLazyLoaded] = useState(false)
+
   const [count, setCount] = useState(0)
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <button onClick={() => setCount((count) => count + 1)}>
+        count is {count}
+      </button>
       <hr />
-      <CounterReact />
+
+      <React.Suspense fallback={<div>Loading...</div>}>
+        { lazyLoaded
+          ?
+          <Counter />
+          :
+          <button onClick={() => setLazyLoaded(true)}>
+            Load lazy
+          </button>
+        }
+      </React.Suspense>
     </>
   )
 }

@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import _ from 'lodash'
 
-var a = 10;
-console.log(a)
+console.log(`l:`, _.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 }))
 
-export const CounterReact = () => {
+const Counter = () => {
   const [counter, setCount] = useState(0);
 
   const clicked = () => {
@@ -12,9 +12,11 @@ export const CounterReact = () => {
 
   return (
     <div>
-      <h3>Ui2 react counter: {counter}</h3>
+      <span>Ui2 Counter: {counter}</span>
       <button onClick={clicked}>+</button>
     </div>
   )
 
 }
+
+export default Counter;
